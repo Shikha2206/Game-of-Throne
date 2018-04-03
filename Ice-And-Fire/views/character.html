@@ -1,0 +1,10 @@
+<div>
+<input type="Submit" value="PREV" ng-click="firstInfo.getPrevCharacter('characters')">
+<input type="Submit" value="NEXT" ng-click="firstInfo.getNextCharacter('characters')">
+<ul>
+  <li ng-repeat="item in firstInfo.characterdata1">  <!-- // repeating in names  -->
+    {{ item.name}}	
+	
+  </li>
+</ul>
+</div>

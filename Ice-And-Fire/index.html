@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='mainApp'>
+<head>
+  <title>ICE AND FIRE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/GOT.css">
+  <head>
+<body id="intro-header">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="nav-icon">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">GOT</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container text-center" id="main-tab">    
+  <h3></h3><br>
+  <div class="row">
+  <div class="col-sm-3">
+    <a href="#/All Details">All Details</a> 
+    </div>
+    <div class="col-sm-3">
+    <a href="#/books">Book</a>
+    </div>
+    <div class="col-sm-3"> 
+     <a href="#/houses">House</a>   
+    </div>
+    <div class="col-sm-3">
+    <a href="#/Characters">Character</a> 
+    </div>
+  </div>
+</div><br>
+<div class="container text-center">
+<div ng-view></div>
+</div>
+<footer class="container-fluid text-center">
+  <p>&copy;Game Of Thrones</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+<script type="text/javascript" src="angular/app.js"></script>
+<script type="text/javascript" src="angular/service/service.js"></script>
+                                              <!-- CONTROLLERS   -->
+<script  src="angular/controller/First.js"></script>
+<script  src="angular/controller/Second.js"></script>
+<script  src="angular/controller/third.js"></script>
+ <!-- ROUTE FILE -->
+<script type="text/javascript" src="angular/routes.js"></script>
+</body>
+</html>
