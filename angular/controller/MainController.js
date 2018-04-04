@@ -22,8 +22,7 @@ myApp.controller('MainController,['$http',$q','$location','IceAndFireService',fu
             $location.path('/500');
         }
       })
-  
     }
-     this.loadAll();
   }
+   this.loadAll();
 }]);
