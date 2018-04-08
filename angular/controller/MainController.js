@@ -12,8 +12,7 @@ myApp.controller('indexController',['$http','$q','$location','IceAndFireService'
           main.getAllData.push(response[i].data[j]);
           console.log(main.getAllData);
         }
-	  }
-		function errorCallback(response){
+	  },function errorCallback(response){
         console.log(response);
         switch (response.status) {
           case 404:
@@ -23,6 +22,6 @@ myApp.controller('indexController',['$http','$q','$location','IceAndFireService'
             $location.path('/500');
         }
 		})
-      }
+      };
    this.loadAll();
 }]);
