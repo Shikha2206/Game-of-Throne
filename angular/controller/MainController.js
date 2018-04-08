@@ -1,5 +1,5 @@
 ﻿//firstController to view all matches
-myApp.controller('mainController,['$http',$q','$location','IceAndFireService',function($http,$location,$q,IceAndFireService){ 
+myApp.controller('mainController',['$http',$q','$location','IceAndFireService',function($http,$location,$q,IceAndFireService){ 
    var main=this;
 	this.getAllData=[];
 	 this.loadAll = function(){
@@ -10,7 +10,7 @@ myApp.controller('mainController,['$http',$q','$location','IceAndFireService',fu
         for(var i in response){
           for(var j in response[i].data)
           main.getAllData.push(response[i].data[j]);
-          // console.log(main.getAllData);
+          console.log(main.getAllData);
         }
 		function error(response){
         console.log(response);
