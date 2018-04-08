@@ -4,7 +4,7 @@ myApp.config(['$routeProvider', function($routeProvider){
             // location of the template
         	templateUrl		: 'views/index-view.html',
         	// Which controller it should use 
-            controller 		: 'mainController',
+            controller 		: 'indexController',
             // what is the alias of that controller.
         	controllerAs 	: 'allInfo'
         })
