@@ -61,6 +61,7 @@ myApp.controller('firstController',['$http','$location','$routeParams','IceAndFi
 		 {
 			 if(main.housePrev>1)
 			 {
+				 console.log(main.housePrev);
 				 main.housePrev=main.housePrev-1;
 				 IceAndFireService.houseAllDetail(main.housePrev)
 				 .then(function successCallback(response)

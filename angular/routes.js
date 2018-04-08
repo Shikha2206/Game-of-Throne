@@ -2,7 +2,7 @@ myApp.config(['$routeProvider', function($routeProvider){
     $routeProvider
 	.when("/allDetails",{
             // location of the template
-        	templateUrl		: 'views/index-view.html',
+        	templateUrl		: 'views/mainpage.html',
         	// Which controller it should use 
             controller 		: 'indexController',
             // what is the alias of that controller.
