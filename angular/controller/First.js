@@ -63,7 +63,7 @@ myApp.controller('firstController',['$http','$location','$routeParams','IceAndFi
 			 {
 				 console.log(main.housePrev);
 				 main.housePrev=main.housePrev-1;
-				 IceAndFireService.houseAllDetail(main.housePrev)
+				 IceAndFireService.houseAlldetail(main.housePrev)
 				 .then(function successCallback(response)
 				 {
 					 main.housedata1=response.data;
@@ -89,7 +89,7 @@ myApp.controller('firstController',['$http','$location','$routeParams','IceAndFi
 			 if(main.houseNext===0 || main.houseNext >0 )
 			 {
 				 main.houseNext=main.houseNext+1;
-				 IceAndFireService.houseAllDetail(main.houseNext)
+				 IceAndFireService.houseAlldetail(main.houseNext)
 				 .then(function successCallback(response)
 				 {
 					 main.housedata1=response.data;
