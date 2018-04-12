@@ -1,2 +1,8 @@
-<div style="color:darkslategray;font-size:20px" class="glyphicon glyphicon-user"> <i><a ng-href="#/characters/{{id}}">{{getAlldata.name}}</a></i> </div>
-<!-- <div ng-show="view.name==''"style="color:darkslategray;font-size:20px" class="glyphicon glyphicon-user"> <i><a ng-href="#/characters/{{$index+1}}">{{view.aliases[0]}}</a></i> </div> -->
+<div>
+<ul>
+  <li ng-repeat="item in SingleInfo.characterInstance"> 
+  <!-- // repeating in names  -->
+  {{item.name}}
+  {{item.aliases}}
+</ul>
+</div>

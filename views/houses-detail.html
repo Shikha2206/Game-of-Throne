@@ -1,1 +1,8 @@
-<div style="color:brown;font-size:20px" class="glyphicon glyphicon-home"> <i><a ng-href="#/houses/{{id}}" style="color:brown">{{getAlldata.name}}</a> </i> </div>
+<div>
+<ul>
+  <li ng-repeat="item in SingleInfo.houseInstance"> 
+  <!-- // repeating in names  -->
+  {{item.name}}
+  {{item.region}}
+</ul>
+</div>

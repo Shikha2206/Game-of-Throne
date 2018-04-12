@@ -26,6 +26,21 @@ myApp.config(['$routeProvider', function($routeProvider){
               controller : 'firstController',
               controllerAs : 'firstInfo'
            })
+		   .when("/books/:Id1",{
+              templateUrl : 'views/character.html',
+              controller : 'secondController',
+              controllerAs : 'singleInfo'
+           })
+		   .when("/characters/:Id3",{
+              templateUrl : 'views/character.html',
+              controller : 'SecondController',
+              controllerAs : 'singleInfo'
+           })
+		   .when("/houses/:Id2",{
+              templateUrl : 'views/character.html',
+              controller : 'secondController',
+              controllerAs : 'singleInfo'
+           })
         .otherwise(
             {
                 redirectTo:'/'

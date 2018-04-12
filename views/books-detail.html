@@ -1,1 +1,8 @@
-<div style="color:darkgoldenrod;font-size:20px" class="glyphicon glyphicon-book"> <i><a ng-href="#/books/{{id}}" style="color:darkgoldenrod">{{getAlldata.name}}</a> </i> </div>
+<div>
+<ul>
+  <li ng-repeat="item in SingleInfo.bookInstance"> 
+  <!-- // repeating in names  -->
+  {{item.name}}
+  {{item.authors}}
+</ul>
+</div>

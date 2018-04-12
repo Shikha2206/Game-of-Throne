@@ -35,5 +35,9 @@ this.characterAlldetail=function(value)
 {
 	return $http.get(main.baseUrl + "/characters" + "?page=" + value + "&pageSize=10");
 }
+this.singleDetails=function(url)
+{
+	return $http.get(url);
+}
 });
 
