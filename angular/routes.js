@@ -33,7 +33,7 @@ myApp.config(['$routeProvider', function($routeProvider){
            })
 		   .when("/characters/:Id3",{
               templateUrl : 'views/character.html',
-              controller : 'SecondController',
+              controller : 'secondController',
               controllerAs : 'singleInfo'
            })
 		   .when("/houses/:Id2",{

@@ -4,7 +4,7 @@
 <ul>
   <li ng-repeat="item in firstInfo.characterdata1"> 
   <!-- // repeating in names  -->
-  <a ng-href="#/characters/{{ item.url}}"> 
+  <a ng-href="#/characters/{{ item.url.split("/").pop()}}> 
     {{ item.name}}	
 	</a>
   </li>

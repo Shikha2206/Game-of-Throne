@@ -4,7 +4,7 @@
 <div class="row col-lg-offset-1">
 <div class="col-sm-3 col-md-6 col-lg-4" ng-repeat="item in firstInfo.bookdata1" style="width:300px;height:300px ">
 <div class="col-sm-12">
-<a ng-href="#/books/{{ item.url}}" >
+<a ng-href="#/books/{{ item.url.split("/").pop()}}" >
 <img ng-src = "images/ {{item.name}}.jpg" class="img-responsive" style="width:200px;height:200px" >
 {{item.name}}
 </a>

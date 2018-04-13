@@ -10,7 +10,7 @@
 <div ng-controller="ListController as nameInfo">
 <ul>
   <li ng-repeat="x in nameInfo.data">  <!-- // repeating in names  -->
-    {{ x.name}}	
+    {{ x.url.split("/").pop()}}	
   </li>
 </ul>
 </div>
