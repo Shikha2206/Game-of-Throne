@@ -14,13 +14,6 @@ myApp.controller('indexController',['$http','$q','$location','IceAndFireService'
         }
 	  },function errorCallback(response){
         console.log(response);
-        switch (response.status) {
-          case 404:
-            $location.path('/404');
-            break;
-          default:
-            $location.path('/500');
-        }
 		})
       };
    this.loadAll();
