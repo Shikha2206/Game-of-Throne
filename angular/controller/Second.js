@@ -39,7 +39,7 @@ myApp.controller('secondController', ['$http','$location','$routeParams','IceAnd
 	 this.bookwiseDetail();
 	 this.characterwiseDetail=function()
 	 {
-		 IceAndFireService.hosueDetail(main.characterId)
+		 IceAndFireService.characterDetail(main.characterId)
 		 .then(function successCallback(response)
 		 {
 			 main.charcterInstance.push(response.data)
