@@ -27,17 +27,17 @@ myApp.config(['$routeProvider', function($routeProvider){
               controllerAs : 'firstInfo'
            })
 		   .when("/books/:Id1",{
-              templateUrl : 'views/character.html',
-              controller : 'secondController',
-              controllerAs : 'singleInfo'
-           })
-		   .when("/characters/:Id3",{
-              templateUrl : 'views/character.html',
+              templateUrl : 'views/books-detail.html',
               controller : 'secondController',
               controllerAs : 'singleInfo'
            })
 		   .when("/houses/:Id2",{
-              templateUrl : 'views/character.html',
+              templateUrl : 'views/houses-detail.html',
+              controller : 'secondController',
+              controllerAs : 'singleInfo'
+           })
+		   .when("/characters/:Id3",{
+              templateUrl : 'views/characters-details.html',
               controller : 'secondController',
               controllerAs : 'singleInfo'
            })
