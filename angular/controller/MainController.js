@@ -10,7 +10,6 @@ myApp.controller('indexController',['$http','$q','$location','IceAndFireService'
         for(var i in response){
           for(var j in response[i].data)
           main.getAllData.push(response[i].data[j]);
-          console.log(main.getAllData);
         }
 	  },function errorCallback(response){
         console.log(response);
