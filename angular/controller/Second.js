@@ -5,11 +5,11 @@ myApp.controller('secondController', ['$http','$location','$routeParams','IceAnd
 	this.houseInstance=[];
 	this.bookInstance=[];
 	this.houseId=$routeParams.Id2;
-	console.log(this.houseId);
+	console.log(main.houseId);
 	this.bookId=$routeParams.Id1;
-    console.log(this.bookId);
+    console.log(main.bookId);
 	this.characterId=$routeParams.Id3;
-	console.log(this.characterId);
+	console.log(main.characterId);
 	this.characterInstance=[];  
 	this.housewiseDetail=function()
 	 {
