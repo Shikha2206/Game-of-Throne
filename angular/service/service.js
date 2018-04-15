@@ -9,7 +9,7 @@ this.bookData=function()
 }
 this.bookDetail=function(item)
 {
-	return $http.get(main.baseUrl+"/books"+item);
+	return $http.get(main.baseUrl+"/books/"+item);
 }
 this.houseData=function()
 {
@@ -17,7 +17,7 @@ this.houseData=function()
 }
 this.houseDetail=function(item)
 {
-	return $http.get(main.baseUrl + "/houses" +item);
+	return $http.get(main.baseUrl + "/houses/" +item);
 }
 this.characterData=function()
 {
@@ -25,7 +25,7 @@ this.characterData=function()
 }
 this.characterDetail=function(item)
 {
-	return $http.get(main.baseUrl + "/characters" + item);
+	return $http.get(main.baseUrl + "/characters/" + item);
 }
 this.houseAlldetail=function(value)
 {

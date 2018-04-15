@@ -2,7 +2,7 @@
 <input type="Submit" value="PREV" ng-click="firstInfo.getPrevHouse('houses')">
 <input type="Submit" value="NEXT" ng-click="firstInfo.getNextHouse('houses')">
 <ul><li ng-repeat="item in firstInfo.housedata1">   <!-- // repeating in names  -->
-<a ng-href="#/house/{{ item.url.split("/").pop() }}">   
+<a ng-href="#/house/{{ item.url.split("/").pop( ) }}">   
    {{ item.name}}	
     </a>
   </li>
