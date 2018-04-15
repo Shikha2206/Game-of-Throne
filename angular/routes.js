@@ -37,7 +37,7 @@ myApp.config(['$routeProvider', function($routeProvider){
               controllerAs : 'singleInfo'
            })
 		   .when("/characters/:Id3",{
-              templateUrl : 'views/characters-details.html',
+              templateUrl : 'views/characters-detail.html',
               controller : 'secondController',
               controllerAs : 'singleInfo'
            })
