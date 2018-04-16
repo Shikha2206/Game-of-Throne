@@ -1,5 +1,5 @@
 ﻿//firstController to view all matches
-myApp.controller('indexController',['$http','$q','$location','IceAndFireService','$routeParam', function($http,$q,$location,IceAndFireService,$routeParam){
+myApp.controller('indexController',['$http','$q','$location','$routeParam','IceAndFireService', function($http,$q,$location,$routeParam,IceAndFireService,){
    var main=this;
 	this.getAllData=[];
 	 this.loadAll = function(){
