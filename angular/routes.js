@@ -1,6 +1,6 @@
 myApp.config(['$routeProvider', function($routeProvider){
     $routeProvider
-	.when("/allDetails",{
+	.when("/all",{
             // location of the template
         	templateUrl		: 'views/mainpage.html',
         	// Which controller it should use 
