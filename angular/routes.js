@@ -21,7 +21,7 @@ myApp.config(['$routeProvider', function($routeProvider){
         	controller 		: 'firstController',
         	controllerAs 	: 'firstInfo'
         })
-		 .when("/Characters",{
+		 .when("/characters",{
               templateUrl : 'views/character.html',
               controller : 'firstController',
               controllerAs : 'firstInfo'
