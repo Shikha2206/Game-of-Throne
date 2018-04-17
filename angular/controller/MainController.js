@@ -1,5 +1,5 @@
 ﻿//firstController to view all matches
-myApp.controller('indexController',['$http','$q','$location','$routeParam','IceAndFireService', function($http,$q,$location,$routeParam,IceAndFireService,){
+myApp.controller('indexController',['$http','$q','$location','IceAndFireService', function($http,$q,$location,IceAndFireService,){
    var main=this;
 	this.getAllData=[];
 	 this.loadAll = function(){
@@ -17,18 +17,4 @@ myApp.controller('indexController',['$http','$q','$location','$routeParam','IceA
 		})
       };
    this.loadAll();
-   this.url=$routeParam.url;
-   this.singleDetail=function()
-	 {
-		 IceAndFireService.singleDetails(main.url)
-		.then(function successCallback(response)
-		 {
-			 main.singleInstance.push(response.data)
-			console.log(main.singleInstance);
-		 },function errorCallback(reason)
-		 {
-			 alert("getting some error with Single Instance");	
-		 })
-	 };
-	 this.singleDetail();
 }]);

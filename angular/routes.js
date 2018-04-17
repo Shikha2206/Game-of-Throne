@@ -8,14 +8,6 @@ myApp.config(['$routeProvider', function($routeProvider){
             // what is the alias of that controller.
         	controllerAs 	: 'allInfo'
         })
-		.when("/all:url",{
-            // location of the template
-        	templateUrl		: 'views/mainpage-detail.html',
-        	// Which controller it should use 
-            controller 		: 'indexController',
-            // what is the alias of that controller.
-        	controllerAs 	: 'allInfo'
-        })
         .when("/books",{
             // location of the template
         	templateUrl		: 'views/book.html',
@@ -49,6 +41,14 @@ myApp.config(['$routeProvider', function($routeProvider){
               controller : 'secondController',
               controllerAs : 'singleInfo'
            })
+		   .when("/all:url",{
+            // location of the template
+        	templateUrl		: 'views/mainpage-detail.html',
+        	// Which controller it should use 
+            controller 		: 'indexController',
+            // what is the alias of that controller.
+        	controllerAs 	: 'allInfo'
+        })
         .otherwise(
             {
                 redirectTo:'/'
