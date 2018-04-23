@@ -1,8 +1,17 @@
-<div>
+<div class="row">
+<div class="col-lg-6">
+<img src="images/writer.jpg">
+</div>
+<div class="col-lg-6">
 <ul>
   <li ng-repeat="item in singleInfo.bookInstance"> 
   <!-- // repeating in names  -->
   {{item.name}}
   {{item.authors}}
+  {{item.numberofPages}}
+  {{item.publisher}}
+  {{item.released | medium}}
+  </li>
 </ul>
+</div>
 </div>

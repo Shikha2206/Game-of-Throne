@@ -1,6 +1,10 @@
 <div>
-<input type="Submit" value="PREV" ng-click="firstInfo.getPrevCharacter('characters')">
-<input type="Submit" value="NEXT" ng-click="firstInfo.getNextCharacter('characters')">
+<a ng-click="firstInfo.getPrevCharacter('characters')"  style="cursor: pointer;">
+<span><i class="fa fa-chevron-left fa-2x text-danger"></i></span>
+</a>
+<a ng-click="firstInfo.getNextCharacter('characters')"  style="cursor: pointer;">
+<span><i class="fa fa-chevron-right fa-2x text-danger"></i></span>
+</a>
 <ul>
   <li ng-repeat="item in firstInfo.characterdata1"> 
   <!-- // repeating in names  -->
