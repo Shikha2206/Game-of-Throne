@@ -8,16 +8,16 @@
 <br/>
 <br/>
 <br/>
-<ul>
-  <li ng-repeat="item in singleInfo.bookInstance" style="type:none"> 
-  <!-- // repeating in names  -->
-  Book Name:{{item.name}}<br/>
-  Author:{{item.authors}}<br/>
-  Number of Pages:{{item.numberofPages}}<br/>
-  Publisher:{{item.publisher}}<br/>
-  Released:{{item.released | date:medium}}<br/>
-  </li>
-</ul>
-</center><a href="#/books">Back &rarr;</a></center>
+<Table>
+<tr>
+ <td>Book Name: {{item.name}}<td/>
+ <td> Author:   {{item.authors}}<td/>
+ <td> Number of Pages: {{item.numberofPages}}<td/> 
+ <td> Publisher: {{item.publisher}}</td>
+ <td> Released:{{item.released | date:medium}}</td>
+ <td>
+</center><a href="#/books">Back &rarr;</a></center></td>
+ </tr>
+</Table>
 </div>
 </div>

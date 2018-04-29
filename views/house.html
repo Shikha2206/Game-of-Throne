@@ -1,11 +1,12 @@
-<div>
-<div ng-repeat="item in firstInfo.housedata1">
-<div class="housedata">  <!-- // repeating in names  -->
+<div class="container">
+<div class="row">
+<div class="col-sm-3" ng-repeat="item in firstInfo.housedata1">
+<img src="images/housesymb.jpg">
 <a ng-href='#/houses/{{ item.url.split("/").pop( ) }}'>   
    {{ item.name}}	
     </a>
-  </div>
 </div>
 <input type="Submit" value="PREV" ng-click="firstInfo.getPrevHouse('houses')">
 <input type="Submit" value="NEXT" ng-click="firstInfo.getNextHouse('houses')">
+</div>
 </div>

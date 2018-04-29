@@ -1,13 +1,11 @@
-<div>
-<ul>
-  <li ng-repeat="item in firstInfo.characterdata1"> 
-  <!-- // repeating in names  -->
+<div class="container">
+<div class="row">
+<input type="Submit" value="PREV" ng-click="firstInfo.getNextCharacter('characters')">
+<input type="Submit" value="NEXT" ng-click="firstInfo.getNextCharacter('characters')">
+  <div class="col-sm-3" ng-repeat="item in firstInfo.characterdata1"> 
+  <img src="images/warrior.jpg">
   <a ng-href='#/characters/{{ item.url.split("/").pop( ) }}'> 
     {{ item.name}}	
 	</a>
-  </li>
-</ul>
-<input type="Submit" value="PREV" ng-click="firstInfo.getNextCharacter('characters')">
-<input type="Submit" value="NEXT" ng-click="firstInfo.getNextCharacter('characters')">
-
+  </div>
 </div>
