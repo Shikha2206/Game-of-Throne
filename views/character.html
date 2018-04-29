@@ -3,7 +3,7 @@
 <input type="Submit" value="PREV" ng-click="firstInfo.getNextCharacter('characters')">
 <input type="Submit" value="NEXT" ng-click="firstInfo.getNextCharacter('characters')">
   <div class="col-sm-3" ng-repeat="item in firstInfo.characterdata1"> 
-  <img src="images/warrior.jpg">
+  <img src="images/warrior.jpg"  style="width:100px;height:100px">
   <a ng-href='#/characters/{{ item.url.split("/").pop( ) }}'> 
     {{ item.name}}	
 	</a>
