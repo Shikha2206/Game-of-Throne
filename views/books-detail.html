@@ -5,11 +5,12 @@
 <div class="col-lg-6" id="book_data">
 <table class="table table-responsive table-condensed" ng-repeat="item in singleInfo.bookInstance">
 <tr>
- <td>Book Name: {{item.name}}<td/>
- <td> Author:   {{item.authors}}<td/>
- <td> Number of Pages: {{item.numberofPages}}<td/> 
- <td> Publisher: {{item.publisher}}</td>
- <td> Released:{{item.released | date:medium}}</td>
+<th style="align:center"> BOOK DETAIL </th>
+ <td>Book Name:</td><td> {{item.name}}<td/>
+ <td> Author: </td></td> {{item.authors}}<td/>
+ <td> Number of Pages:</td></td>{{item.numberofPages}}<td/> 
+ <td> Publisher:</td><td> {{item.publisher}}</td>
+ <td> Released:</td></td>{{item.released | date:medium}}</td>
  <td>
 </center><a href="#/books">Back &rarr;</a></center></td>
  </tr>
