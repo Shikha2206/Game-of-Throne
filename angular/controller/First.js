@@ -13,11 +13,11 @@ myApp.controller('firstController',['$http','$location','$routeParams','IceAndFi
       IceAndFireService.bookData()
        .then(function successCallback(response)
 	   {
-		   console.log(response);
-		   console.log("inside book Controller");
-		   console.log(response.data);
+		   //console.log(response);
+		   //console.log("inside book Controller");
+		  // console.log(response.data);
 		   main.bookdata1=response.data;
-		   console.log(main.bookdata1);
+		   //console.log(main.bookdata1);
 	   },function errorCallback(reason)
 	   {
 		   alert("getting some error with Book record");
@@ -29,10 +29,10 @@ myApp.controller('firstController',['$http','$location','$routeParams','IceAndFi
 		IceAndFireService.houseData()
 		.then(function successCallback(response)
 		{
-			console.log("entering houses")
-			console.log("inside house Controller");
+			//console.log("entering houses")
+			//console.log("inside house Controller");
 			main.housedata1=response.data;
-			console.log(main.housedata1);
+			//console.log(main.housedata1);
 		},function errorCallback(reason)
 		{
 			alert("getting some error with House record")
@@ -44,10 +44,10 @@ myApp.controller('firstController',['$http','$location','$routeParams','IceAndFi
 		  IceAndFireService.characterData()
 		  .then(function successCallback(response)
 		  {
-			  console.log("entering characters")
-		  console.log("inside character Controller");
+			  //console.log("entering characters")
+		  //console.log("inside character Controller");
 		  main.characterdata1=response.data;
-		  console.log(main.characterdata1);
+		  //console.log(main.characterdata1);
 		  },function errorCallback(reason)
 		  {
 			  alert("getting some error with character record");

@@ -1,9 +1,8 @@
-<div class="row" style="width:100%;height:300px">
+<div class="row" style="width:100%;height:60%">
 <div class="col-lg-6" >
 <img src="images/writer.jpg">
 </div>
-<div class="col-lg-6" id="book_data">
-
+<div class="col-lg-6" id="book_data" ng-repeat="item in singleInfo.bookInstance">
  BOOK DETAIL 
  Book Name: {{item.name}}<br/>
  Author:{{item.authors}}<br/>

@@ -13,10 +13,10 @@ myApp.controller('secondController', ['$http','$location','$routeParams','IceAnd
 		 .then(function successCallback(response)
 		 {
 			 main.bookInstance.push(response.data)
-			console.log(main.bookInstance);
+			//console.log(main.bookInstance);
 		 },function errorCallback(reason)
 		 {
-			 alert("getting some error with Book Instance");
+			// alert("getting some error with Book Instance");
 		 })
 	 };
 	 this.bookwiseDetail(); 
@@ -28,10 +28,10 @@ myApp.controller('secondController', ['$http','$location','$routeParams','IceAnd
 		 .then(function successCallback(response)
 		 {
 			 main.houseInstance.push(response.data)
-			console.log(main.houseInstance);
+			//console.log(main.houseInstance);
 		 },function errorCallback(reason)
 		 {
-			 alert("getting some error with house Instance");
+			// alert("getting some error with house Instance");
 		 })
 	 };
 	  this.housewiseDetail();
@@ -43,10 +43,10 @@ myApp.controller('secondController', ['$http','$location','$routeParams','IceAnd
 		 .then(function successCallback(response)
 		 {
 			 main.characterInstance.push(response.data)
-			console.log(main.characterInstance);
+			//console.log(main.characterInstance);
 		 },function errorCallback(reason)
 		 {
-			 alert("getting some error with character Instance");	
+			 //alert("getting some error with character Instance");	
 		 })
 	 };
 	 this.characterwiseDetail();
