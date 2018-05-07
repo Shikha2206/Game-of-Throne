@@ -41,14 +41,13 @@ height:auto;
 
 a.control_prev, a.control_next {
   position: absolute;
-  top: 60%;
+  top: 70%;
   z-index: 999;
   display: block;
-  padding: 2% 2%;
+  padding: 1% 1%;
   width: auto;
   height: auto;
-  background: #2a2a2a;
-  color: #fff;
+  color:#0a0909;
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
@@ -58,13 +57,4 @@ a.control_prev, a.control_next {
 a.control_prev:hover, a.control_next:hover {
   opacity: 1;
   -webkit-transition: all 0.2s ease;
-}
-
-a.control_prev {
-  border-radius: 0 2px 2px 0;
-}
-
-a.control_next {
-  right: 0;
-  border-radius: 2px 0 0 2px;
 }

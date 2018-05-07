@@ -1,18 +1,19 @@
-<div class="row" style="width:100%;height:60%">
+<div class="container">
+<div class="row" style="width:100%;height:50%">
 <div class="col-lg-6" >
 <img src="images/writer.jpg">
 </div>
 <div class="col-lg-6" id="book_data" ng-repeat="item in singleInfo.bookInstance"></br></br>
 </br></br>
-</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br>
 <center>
- <h1>BOOK DETAIL <h1>
+ <h1><b>BOOK DETAIL</B></h1>
  Book Name: {{item.name}}<br/>
  Author:{{item.authors}}<br/>
  Number of Pages:{{item.numberOfPages}} <br/>
  Publisher:{{item.publisher}}<br/>
  Released:{{item.released | date:medium}}<br/></center>
 </center><a href="#/books">Back &rarr;</a></center><br/>
-
+</div>
 </div>
 </div>
