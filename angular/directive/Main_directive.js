@@ -2,15 +2,15 @@ myApp.directive("myCharacters",function(){
 
     return {
         restrict:"E",
-        templateUrl:"./views/characters.html",
+        templateUrl:"./items/characters.html",
         controller : function($scope){
-            var index=$scope.view.url.lastIndexOf('/');
-            $scope.id=$scope.view.url.substring(index+1);
-            if($scope.view.url.search('characters')>-1){
-                if($scope.view.aliases[0].length>1 && !$scope.view.name){
-                    var aliases=$scope.view.aliases[0];
-                    var name=$scope.view.name;
-                    $scope.view.name=aliases;
+            var index=$scope.item.url.lastIndexOf('/');
+            $scope.id=$scope.item.url.substring(index+1);
+            if($scope.item.url.search('characters')>-1){
+                if($scope.item.aliases[0].length>1 && !$scope.item.name){
+                    var aliases=$scope.item.aliases[0];
+                    var name=$scope.item.name;
+                    $scope.item.name=aliases;
                 }
             }
         }
@@ -21,11 +21,11 @@ myApp.directive("myBooks",function(){
 
     return {
         restrict:"E",
-        templateUrl:"./views/books.html",
+        templateUrl:"./items/books.html",
         controller : function($scope){
-            var index=$scope.view.url.lastIndexOf('/');
-            $scope.id=$scope.view.url.substring(index+1);
-            // console.log($scope.view.name);
+            var index=$scope.item.url.lastIndexOf('/');
+            $scope.id=$scope.item.url.substring(index+1);
+            // console.log($scope.item.name);
         }
     }
 });
@@ -34,11 +34,11 @@ myApp.directive("myHouses",function(){
 
     return {
         restrict:"E",
-        templateUrl:"./views/houses.html",
+        templateUrl:"./items/houses.html",
         controller : function($scope){
-            var index=$scope.view.url.lastIndexOf('/');
-            $scope.id=$scope.view.url.substring(index+1);
-            // console.log($scope.view.name);
+            var index=$scope.item.url.lastIndexOf('/');
+            $scope.id=$scope.item.url.substring(index+1);
+            // console.log($scope.item.name);
         }
     }
 });
