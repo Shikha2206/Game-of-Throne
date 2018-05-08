@@ -2,7 +2,7 @@ myApp.directive("myCharacters",function(){
 
     return {
         restrict:"E",
-        templateUrl:"./items/characters.html",
+        templateUrl:"./views/characters.html",
         controller : function($scope){
             var index=$scope.item.url.lastIndexOf('/');
             $scope.id=$scope.item.url.substring(index+1);
@@ -21,7 +21,7 @@ myApp.directive("myBooks",function(){
 
     return {
         restrict:"E",
-        templateUrl:"./items/books.html",
+        templateUrl:"/views/books.html",
         controller : function($scope){
             var index=$scope.item.url.lastIndexOf('/');
             $scope.id=$scope.item.url.substring(index+1);
@@ -34,7 +34,7 @@ myApp.directive("myHouses",function(){
 
     return {
         restrict:"E",
-        templateUrl:"./items/houses.html",
+        templateUrl:"./views/houses.html",
         controller : function($scope){
             var index=$scope.item.url.lastIndexOf('/');
             $scope.id=$scope.item.url.substring(index+1);
