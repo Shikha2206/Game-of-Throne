@@ -21,7 +21,7 @@ myApp.directive("myBooks",function(){
 
     return {
         restrict:"E",
-        templateUrl:"/views/books.html",
+        templateUrl:"./views/books.html",
         controller : function($scope){
             var index=$scope.item.url.lastIndexOf('/');
             $scope.id=$scope.item.url.substring(index+1);
